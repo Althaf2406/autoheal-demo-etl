@@ -32,7 +32,7 @@ jobs:
       - name: Run Unit Tests
         if: success()
         run: |
-          pytest tests/
+          python -m pytest tests/
 
       - name: Notify AutoHeal Agent on Failure
         if: failure() && github.event_name != 'pull_request' && env.AUTOHEAL_WEBHOOK_URL != ''
