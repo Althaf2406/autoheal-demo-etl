@@ -14,7 +14,7 @@ def calculate_revenue(df: pd.DataFrame) -> pd.DataFrame:
     Calculate total revenue per transaction.
     BUG: Column name in CSV is 'price', but here it mistakenly accesses 'total_price'.
     """
-    df["revenue"] = df["total_price"] * df["quantity"]
+    df["revenue"] = df["price"] * df["quantity"]
     return df
 
 
