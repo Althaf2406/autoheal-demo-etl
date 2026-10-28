@@ -1,0 +1,7 @@
+region,product,price,quantity
+North,Widget A,15.50,100
+North,Widget B,24.00,50
+South,Widget A,15.50,80
+South,Widget C,45.00,30
+East,Widget B,24.00,120
+West,Widget C,45.00,60
